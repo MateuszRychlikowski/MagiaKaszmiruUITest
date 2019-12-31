@@ -3,32 +3,15 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using OpenQA.Selenium.Chrome;
+using DotiUITest.Selectors;
 
 namespace DotiUITest.PageObject
 {
-    class MainPage : BasePage
+    class MainPage :BasePage
     {
-
-        [OneTimeSetUp]
-        public void Setup()
+        public void findAndClickMainLogo()
         {
-
+            findAndClickElement(Selectors.MainPage.CompanyLogoButton);
         }
-
-        [Test]
-        public void openMainWebsite()
-        {
-
-            driver.Navigate().GoToUrl("https://www.doti.pl/");
-            Assert.Pass();
-        }
-
-        [TearDown]
-        public void tearDown()
-        {
-            driver.Close();
-        }
-
-
     }
 }

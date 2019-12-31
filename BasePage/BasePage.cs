@@ -13,9 +13,13 @@ namespace DotiUITest
             this.driver = new ChromeDriver(@"C:\Visual Studio Code Project\DotiUITest\Driver\");
         }
 
-        public void findAndClickElement()
+        public void findAndClickElement(By selector)
         {
-            
+            driver.FindElement(selector).Click();
+        }
+        public void findAndSetValue(By selector, string value)
+        {
+            driver.FindElement(selector).SendKeys(value);
         }
     }
 }
