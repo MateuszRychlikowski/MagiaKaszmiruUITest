@@ -7,11 +7,11 @@ namespace DotiUITest
 {
     public class BasePage
     {
-        public ChromeDriver driver;
-        public BasePage()
+        ChromeDriver driver;
+        public BasePage(ChromeDriver driver)
         {
-            this.driver = new ChromeDriver(@"C:\Visual Studio Code Project\DotiUITest\Driver\");
-        }
+            this.driver = driver;
+        }      
 
         public void findAndClickElement(By selector)
         {
@@ -20,6 +20,21 @@ namespace DotiUITest
         public void findAndSetValue(By selector, string value)
         {
             driver.FindElement(selector).SendKeys(value);
+        }
+        public void findElement(By selector)
+        {
+            driver.FindElement(selector);
+        }
+        public bool elementIsDisplayed(By selector)
+        {
+            if (driver.FindElement(selector).Displayed)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
     }
 }
