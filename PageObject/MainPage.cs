@@ -3,9 +3,9 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using OpenQA.Selenium.Chrome;
-using DotiUITest.Selectors;
+using MagiaKaszmiruUITest.Selectors;
 
-namespace DotiUITest.PageObject
+namespace MagiaKaszmiruUITest.PageObject
 {
     class MainPage : BasePage
     {

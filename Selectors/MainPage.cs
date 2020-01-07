@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace DotiUITest.Selectors
+namespace MagiaKaszmiruUITest.Selectors
 {
     internal static class MainPage
     {

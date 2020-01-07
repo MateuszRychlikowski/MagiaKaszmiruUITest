@@ -3,7 +3,7 @@ using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Support.PageObjects;
 
-namespace DotiUITest
+namespace MagiaKaszmiruUITest
 {
     public class BasePage
     {

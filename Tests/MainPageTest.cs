@@ -6,7 +6,7 @@ using System.Text;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 
-namespace DotiUITest.Tests
+namespace MagiaKaszmiruUITest.Tests
 {
     [TestFixture]
     public class MainPageTest
